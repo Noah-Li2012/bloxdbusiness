@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Here ya go</title>
+  <title>Hello</title>
 </head>
 <body>
   <h2>Hi~</h2>
-  <iframe id="randomImageFrame" width="420" height="420" style="border: none;"></iframe>
+  <img id="randomImage" src="" alt="Loading..." width="400">
 
   <script>
     const randomNumber = Math.floor(Math.random() * 5) + 1;
     const imageUrl = `https://raw.githubusercontent.com/Noah-Li2012/bloxdbusiness/main/${randomNumber}.png`;
-
-    document.getElementById("randomImageFrame").src = imageUrl;
+    document.getElementById("randomImage").src = imageUrl;
   </script>
 </body>
 </html>
